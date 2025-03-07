@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Practica_NavegacionEntrePage.ViewModels"
+             x:Class="Practica_NavegacionEntrePage.Views.LoginPage">
+
+    <ContentPage.BindingContext>
+        <vm:LoginViewModel />
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="30" Spacing="20">
+        <Label Text="Iniciar Sesión"
+               FontSize="24"
+               HorizontalOptions="Center" />
+
+        <Entry Placeholder="Correo Electrónico"
+               Text="{Binding Email}"
+               Keyboard="Email" />
+
+        <Entry Placeholder="Contraseña"
+               Text="{Binding Password}"
+               IsPassword="True" />
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button Text="Nueva Cuenta"
+                    Command="{Binding GoToRegisterCommand}" />
+
+            <Button Text="Olvidó el password"
+                    Command="{Binding ForgotPasswordCommand}"
+                    Margin="12,0,0,0" />
+        </StackLayout>
+
+        <Button Text="Ingresar"
+                Command="{Binding LoginCommand}"
+                BackgroundColor="Blue"
+                TextColor="White"/>
+    </StackLayout>
+
+</ContentPage>

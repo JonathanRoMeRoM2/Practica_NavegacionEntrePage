@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Practica_NavegacionEntrePage.ViewModels"
+             x:Class="Practica_NavegacionEntrePage.Views.RegisterPage"
+             Title="Registro">
+
+    <ContentPage.BindingContext>
+        <vm:RegisterViewModel />
+    </ContentPage.BindingContext>
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+            <Label Text="Regístrate ahora"
+                   FontSize="24"
+                   HorizontalOptions="Center" />
+
+            <Entry Placeholder="Usuario" Text="{Binding Name}" />
+            <Entry Placeholder="Contraseña" Text="{Binding Password}" IsPassword="True" />
+            <Entry Placeholder="Email" Text="{Binding Email}" Keyboard="Email"/>
+
+            <Entry Placeholder="Ap. Paterno"/>
+            <Entry Placeholder="Ap. Materno"/>
+            <Entry Placeholder="Edad" Keyboard="Numeric"/>
+            <Entry Placeholder="País"/>
+
+            <Button Text="Aceptar"
+                    Command="{Binding RegisterCommand}"
+                    BackgroundColor="Blue"
+                    TextColor="White"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

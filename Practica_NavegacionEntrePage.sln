@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35723.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practica_NavegacionEntrePage", "Practica_NavegacionEntrePage.csproj", "{FC38E506-4E6C-48E9-A693-BF4F0F71C47D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC38E506-4E6C-48E9-A693-BF4F0F71C47D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC38E506-4E6C-48E9-A693-BF4F0F71C47D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC38E506-4E6C-48E9-A693-BF4F0F71C47D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FC38E506-4E6C-48E9-A693-BF4F0F71C47D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC38E506-4E6C-48E9-A693-BF4F0F71C47D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC38E506-4E6C-48E9-A693-BF4F0F71C47D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3B4CF0B-6C52-4573-AB88-CB2311E7580D}
+	EndGlobalSection
+EndGlobal
