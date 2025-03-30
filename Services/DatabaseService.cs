@@ -24,15 +24,29 @@ namespace Practica_NavegacionEntrePage.Services
         }
 
         // ✅ Buscar usuario por email
+        //public Task<User> GetUserByEmail(string email)
+        //{
+        //    return _database.Table<User>().Where(u => u.Email == email).FirstOrDefaultAsync();
+        //}
+
         public Task<User> GetUserByEmail(string email)
         {
-            return _database.Table<User>().Where(u => u.Email == email).FirstOrDefaultAsync();
+            return _database.Table<User>()
+                .Where(u => u.Email.ToLower() == email.ToLower())
+                .FirstOrDefaultAsync();
         }
+
 
         // ✅ Buscar usuario por credenciales (Login)
         public Task<User> GetUserByCredentials(string email, string password)
         {
             return _database.Table<User>().Where(u => u.Email == email && u.Password == password).FirstOrDefaultAsync();
+        }
+
+        // Añade este método a tu 
+        public async Task<int> UpdateUser(User user)
+        {
+            return await _database.UpdateAsync(user);
         }
     }
 }

@@ -30,7 +30,7 @@
 
             <Button
                 x:Name="Registrate"
-                Text="REGISTRATE"
+                Text="Registrarse"
                 SemanticProperties.Hint="Boton para registrar"
                 Clicked="Registrate_Clicked"
                 HorizontalOptions="Center"
@@ -40,7 +40,7 @@
 
             <Button
                 x:Name="TieneUnaCuenta"
-                Text="TIENE UNA CUENTA"
+                Text="Tengo una Cuenta"
                 Clicked="TieneUnaCuenta_Clicked"
                 HorizontalOptions="Center"
                 WidthRequest="200"
